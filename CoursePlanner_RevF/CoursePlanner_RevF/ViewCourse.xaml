@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoursePlanner_RevF.ViewCourse">
+    <Grid x:Name="viewCoursePage" ColumnSpacing="4">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Title bar -->
+        <BoxView Grid.Row="0" Grid.ColumnSpan="4" BackgroundColor="#0d47a1"/>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="Course Information" TextColor="White" FontSize="Body"
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Fill" 
+                         VerticalOptions="Center">
+                <!-- Course Name -->
+                <Label Text="Course Name" TextColor="Black" 
+                       HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold"/>
+                <Entry x:Name="vCourseNameEntry" Margin="10" IsEnabled="False" />
+
+                <!-- Start Date -->
+                <Label Text="Start Date" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <DatePicker x:Name="vCourseStart" Margin="10" IsEnabled="False" />
+
+                <!-- End Date -->
+                <Label Text="End Date" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <DatePicker x:Name="vCourseEnd" HorizontalOptions="Fill" Margin="10" IsEnabled="False" />
+
+                <!-- Prof name -->
+                <Label Text="Professor Name" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <Entry x:Name="vProfNameEntry" HorizontalOptions="Fill" TextColor="Black" 
+                       Margin="10" IsEnabled="False"/>
+
+                <!-- Prof phone -->
+                <Label Text="Phone Number" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <Entry x:Name="vProfPhoneEntry" HorizontalOptions="Fill" TextColor="Black" 
+                       Margin="10" IsEnabled="False" />
+
+                <!-- Prof email -->
+                <Label Text="Email" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <Entry x:Name="vProfEmailEntry" HorizontalOptions="Fill" TextColor="Black" 
+                       Margin="10" IsEnabled="False" />
+
+
+                <!-- Status -->
+                <Label Text="Course Status" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <Picker x:Name="vCourseStatusPicker" Title="Course Status" HorizontalTextAlignment="Center"
+                        IsEnabled="False">
+                    <Picker.Items>
+                        <x:String>In Progress</x:String>
+                        <x:String>Plan to Take</x:String>
+                        <x:String>Completed</x:String>
+                        <x:String>Dropped</x:String>
+                    </Picker.Items>
+
+                </Picker>
+
+                <!-- Notes -->
+                <Label Text="Course Notes" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <Entry x:Name="vCourseNotes"  HorizontalOptions="Fill" TextColor="Black" 
+                       Margin="10" IsEnabled="False" />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="Enable Notifications" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold"/>
+                    <Switch HorizontalOptions="End" x:Name="enableNotifications"  IsEnabled="False" />
+                </StackLayout>
+
+                <Button Text="Edit" x:Name="vCourseEdit" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="vCourseEdit_Clicked"/>
+
+                
+                <Button Text="Assessments" x:Name="vAssessments" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="vAssessments_Clicked"/>
+
+                <Button Text="Drop Course" x:Name="vDrop" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="vDrop_Clicked"/>
+                
+                <Button Text="Cancel" x:Name="vCourseCancel" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="vCourseCancel_Clicked"/>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

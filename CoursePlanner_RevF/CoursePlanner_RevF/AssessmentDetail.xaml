@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoursePlanner_RevF.AssessmentDetail">
+    <ContentPage.Content>
+        <Grid x:Name="MainNavBar" ColumnSpacing="4" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+
+            </Grid.RowDefinitions>
+            <BoxView Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="#0d47a1"/>
+            
+            <StackLayout  Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label x:Name="AssessmentName" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"/>
+            </StackLayout>
+            <ImageButton  Margin="5" Grid.Row="0" Grid.Column="2" Source="WGULogo.png" HorizontalOptions="Center" VerticalOptions="Center" CornerRadius="20"/>
+            <TableView Grid.Row="1" Grid.ColumnSpan="3">
+                <TableSection x:Name="AssessmentTable">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Label Text="Start Date: "/>
+                            <Label x:Name="StartDate"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Label Text="End Date: "/>
+                            <Label x:Name="EndDate"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Label Text="Assessment Type: "/>
+                            <Label x:Name="AssessmentType"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                            <Label Text="Notifcations Enabled: "/>
+                            <Label x:Name="NotificationsEnabled"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableView>
+            <BoxView Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="#0d47a1"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="3" HorizontalOptions="Center">
+                <Button Text="Edit" TextColor="White" x:Name="editAssBtn" Clicked="editAssBtn_Clicked" BackgroundColor="Transparent"/>
+                <Button Text="Delete" TextColor="White" x:Name="deleteAssBtn" Clicked="deleteAssBtn_Clicked" BackgroundColor="Transparent"/>
+                <Button Text="Cancel" TextColor="White" x:Name="cancelBtn" Clicked="cancelBtn_Clicked"  BackgroundColor="Transparent"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

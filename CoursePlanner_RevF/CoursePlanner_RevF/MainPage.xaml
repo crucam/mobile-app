@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoursePlanner_RevF.MainPage">
+
+    <Grid x:Name="MainNavBar" ColumnSpacing="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.ColumnSpan="3" Grid.Row="0" BackgroundColor="#0d47a1"/>
+
+        <Button Padding="5" Grid.Row="0" Grid.Column="0" Text="+" FontSize="20" TextColor="White" HeightRequest="40" 
+                WidthRequest="40" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent" 
+                x:Name="addTermBtn" Clicked="addTermBtn_Clicked"/>
+
+        <Label Grid.Row="0" Grid.Column="1" Text="WGU Student Portal" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <!-- <Image  Margin="5" Grid.Row="0" Grid.Column="2" Source="wgu.png" HorizontalOptions="Center" VerticalOptions="Center"/> -->
+        <ImageButton Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" 
+               Padding="5" Source="WGULogo.png" CornerRadius="20"/>
+
+        <ListView Grid.Row="1" Grid.ColumnSpan="3" 
+                  x:Name="termListView"
+                  ItemSelected="termListView_ItemSelected" >
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell IsEnabled="True">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="{Binding TermName}" VerticalOptions="Center" TextColor="Blue"/>
+                            <Label Text="{Binding StartDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                            <Label Text="-" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding EndDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

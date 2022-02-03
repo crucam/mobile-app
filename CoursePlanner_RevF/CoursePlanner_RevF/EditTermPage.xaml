@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoursePlanner_RevF.EditTermPage">
+    <StackLayout>
+        <Label Text="Term Name" x:Name="termNameLabel" FontSize="Title"
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+               HorizontalOptions="Center" TextColor="Blue" FontAttributes="Bold"/>
+        <Entry x:Name="termNameEntry" HorizontalOptions="Fill"/>
+
+        <Label Text="Start Date" x:Name="startDateLabel" FontSize="Body"
+               HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               HorizontalOptions="Start" TextColor="Black"/>
+        <DatePicker x:Name="startDatePicker" HorizontalOptions="Fill"/>
+
+        <Label Text="End Date" x:Name="endDateLabel" FontSize="Body"
+               HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+               HorizontalOptions="Start" TextColor="Black"/>
+        <DatePicker x:Name="endDatePicker" HorizontalOptions="Fill"/>
+
+
+
+        <Button Text="Save" x:Name="saveTermBtn" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="saveTermBtn_Clicked"/>
+
+        <Button Text="Cancel" x:Name="cancelBtn" HorizontalOptions="Fill" BackgroundColor="Blue" TextColor="White" Clicked="cancelBtn_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

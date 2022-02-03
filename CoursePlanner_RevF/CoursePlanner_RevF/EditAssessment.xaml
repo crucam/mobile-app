@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoursePlanner_RevF.EditAssessment">
+    
+    <Grid x:Name="EditAss" ColumnSpacing="4">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Title bar -->
+        <BoxView Grid.Row="0" Grid.ColumnSpan="4" BackgroundColor="#0d47a1"/>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="editAssBar"
+               Text="Edit Assessment" TextColor="White" FontSize="Body"
+               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+               HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+
+        <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Fill" 
+                         VerticalOptions="Center">
+                <!-- Assessment Name -->
+                <Label Text="Assessment Name" TextColor="Black" 
+                       HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold"/>
+                <Entry x:Name="assNameEntry" Margin="10"/>
+
+                <!-- Start Date -->
+                <Label Text="Start Date" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <DatePicker x:Name="assStart" Margin="10"/>
+
+                <!-- End Date -->
+                <Label Text="End Date" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+                <DatePicker x:Name="assEnd" HorizontalOptions="Fill" Margin="10"/>
+
+                <!-- Assessment Type -->
+                <Label Text="Assessment Type" FontSize="Body"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" TextColor="Black"  FontAttributes="Bold"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="3"
+                       Text="Additional Notes" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+
+                <Entry x:Name="assNotes" HorizontalOptions="Fill"/>
+
+
+                <Label Text="Enable Notifications" FontSize="Body"
+                    HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                    HorizontalOptions="Start" TextColor="Black" FontAttributes="Bold"/>
+                <Switch HorizontalOptions="End" x:Name="enableNotifications"/>
+                    
+                <Button Text="Save" x:Name="assSave" HorizontalOptions="Fill" 
+                        BackgroundColor="Blue" TextColor="White" Clicked="assSave_Clicked"/>
+
+                <Button Text="Cancel" x:Name="assCancel" HorizontalOptions="Fill" 
+                        BackgroundColor="Blue" TextColor="White" Clicked="assCancel_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

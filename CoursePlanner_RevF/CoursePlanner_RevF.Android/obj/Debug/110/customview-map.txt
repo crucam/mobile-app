@@ -1,0 +1,52 @@
+@string/appbar_scrolling_view_behavior;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
+alpha;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\enterfromleft.xml
+alpha;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\exittoleft.xml
+androidx.appcompat.widget.Toolbar;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\fallbacktoolbardonotuse.xml
+androidx.appcompat.widget.Toolbar;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+androidx.appcompat.widget.Toolbar;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\shellcontent.xml
+androidx.appcompat.widget.Toolbar;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\toolbar.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\shellcontent.xml
+attr;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\attrs.xml
+background;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
+background;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Debug\110\res\values\colors.xml
+com.google.android.material.appbar.AppBarLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\flyoutcontent.xml
+com.google.android.material.appbar.AppBarLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+com.google.android.material.appbar.AppBarLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\shellcontent.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\bottomtablayout.xml
+com.google.android.material.tabs.TabLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\fallbacktabbardonotuse.xml
+com.google.android.material.tabs.TabLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+com.google.android.material.tabs.TabLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+declare-styleable;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\attrs.xml
+external-cache-path;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\bottomtablayout.xml
+item;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\styles.xml
+LinearLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\bottomtablayout.xml
+paths;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\55\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+resources;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\attrs.xml
+resources;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\strings.xml
+resources;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\styles.xml
+resources;obj\Debug\110\res\values\colors.xml
+resources;obj\Debug\110\res\values\styles.xml
+set;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\enterfromleft.xml
+set;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\enterfromright.xml
+set;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\exittoleft.xml
+set;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\exittoright.xml
+string;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\strings.xml
+style;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\values\styles.xml
+style;obj\Debug\110\res\values\styles.xml
+translate;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\enterfromleft.xml
+translate;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\enterfromright.xml
+translate;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\exittoleft.xml
+translate;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\anim\exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\rootlayout.xml
+xamarin.forms.platform.android.ShellFlyoutLayout;I:\Coding Training\CoursePlanner_RevF\CoursePlanner_RevF.Android\obj\Debug\110\lp\56\jl\res\layout\flyoutcontent.xml
